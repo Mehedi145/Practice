@@ -3,3 +3,8 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+.heights{
+    height: 100px;
+    width: 100px;
+}
