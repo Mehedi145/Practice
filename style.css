@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(56, 56, 56);
+}
+
 #heading {
     background-color: rgb(27, 149, 248);
     color: rgb(7, 229, 52);

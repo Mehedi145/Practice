@@ -564,4 +564,3 @@
 
 
 
-console.log('i am come from console log');
