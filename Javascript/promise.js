@@ -54,55 +54,88 @@
 
 
 
-let paymentStatus = true;
-let marks = 84;
+// let paymentStatus = true;
+// let marks = 84;
 
-function enroll() {
-    console.log(`course enrollment is in progress`);
-    const promise = new Promise(function (resolve, reject) {
-        setTimeout(() => {
-            if (paymentStatus) {
-                resolve();
-            } else {
-                reject(`Payment failed`);
-            }
-        }, 2000);
-    });
+// function enroll() {
+//     console.log(`course enrollment is in progress`);
+//     const promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             if (paymentStatus) {
+//                 resolve();
+//             } else {
+//                 reject(`Payment failed`);
+//             }
+//         }, 2000);
+//     });
 
-    return promise;
-}
+//     return promise;
+// }
 
-function progress() {
-    console.log(`Congrats! Your enrollment is succesful`);
-    console.log(`course is in progress for 3 month`);
-    let promise = new Promise(function (resolve, reject) {
-        if (marks >= 80) {
-            resolve();
-        } else {
-            reject(`You don't have enugh mark to get the Certificate.`);
-        }
-    });
+// function progress() {
+//     console.log(`Congrats! Your enrollment is succesful`);
+//     console.log(`course is in progress for 3 month`);
+//     let promise = new Promise(function (resolve, reject) {
+//         if (marks >= 80) {
+//             resolve();
+//         } else {
+//             reject(`You don't have enugh mark to get the Certificate.`);
+//         }
+//     });
 
-    return promise;
-}
+//     return promise;
+// }
 
-function certificate() {
-    console.log(`Your certificate is prepeiring`);
-    let promise = new Promise(function (resolve, reject) {
-        setTimeout(() => {
-            resolve('Congrats! You got the certificate.');
-        }, 1000);
-    })
+// function certificate() {
+//     console.log(`Your certificate is prepeiring`);
+//     let promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve('Congrats! You got the certificate.');
+//         }, 1000);
+//     })
 
-    return promise;
-}
+//     return promise;
+// }
 
-enroll()
-    .then(progress)
-    .then(certificate)
-    .then(function (value) {
-        console.log(value);
-    })
-    .catch(function (error) {
-        console.log(error);
-    })
+// enroll()
+//     .then(progress)
+//     .then(certificate)
+//     .then(function (value) {
+//         console.log(value);
+//     })
+//     .catch(function (error) {
+//         console.log(error);
+//     })
+
+
+
+
+
+
+
+
+
+
+
+// function checkNumbers(num) {
+//     let promise = new Promise(function (resolve, reject) {
+//         if (num % 2 === 0) {
+//             resolve(`Even number.`);
+//         } else {
+//             reject(`Odd number.`);
+//         }
+//     });
+
+//     return promise;
+// }
+
+// checkNumbers(1)
+//     .then(function (value) { console.log(value); })
+
+
+
+
+
+
+
+

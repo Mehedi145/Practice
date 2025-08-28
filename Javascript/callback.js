@@ -97,3 +97,14 @@
 
 
 
+// function checkNumbers(num) {
+//     let promise = new Promise(function (resolve, reject) {
+//         if (num % 2 === 0) {
+//             resolve(`Even number.`);
+//         } else {
+//             reject(`Odd number.`);
+//         }
+//     });
+
+//     return promise;
+// }
