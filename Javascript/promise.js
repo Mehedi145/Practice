@@ -139,3 +139,168 @@
 
 
 
+// function checkEvenOdd(num) {
+//     return new Promise(function (resolve, reject) {
+//         if (num % 2 === 0) {
+//             resolve(`Number is even`);
+//         } else {
+//             reject('Number is odd');
+//         }
+//     });
+// }
+
+// checkEvenOdd(8881)
+//     .then(function (value) {
+//         console.log(value);
+//     })
+//     .catch(function (error) {
+//         console.log(error);
+//     });
+
+
+
+
+
+
+
+// function delayedMessage(message, time) {
+//     let promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve(message);
+//         }, time);
+//     });
+//     return promise;
+// }
+
+// delayedMessage('Hello ChatGpt', 2000).then(function (value) {
+//     console.log(value);
+// }).catch(function (error) {
+//     console.log(error);
+// })
+
+
+
+
+
+
+
+
+
+
+// function placeOrder() {
+//     let promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve("Order placed 🛒");
+//         }, 1000);
+//     });
+//     return promise;
+// }
+
+// function processOrder() {
+//     let promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve("Order processed ⚙️");
+//         }, 2000);
+//     });
+//     return promise;
+// }
+
+// function deliverOrder() {
+//     let promise = new Promise(function (resolve, reject) {
+//         setTimeout(() => {
+//             resolve("Order delivered 🚚");
+//         }, 1000);
+//     });
+//     return promise;
+// }
+
+// placeOrder()
+//     .then(value => {
+//         console.log(value);
+//         return processOrder();
+//     })
+//     .then(value => {
+//         console.log(value);
+//         return deliverOrder();
+//     })
+//     .then(value => {
+//         console.log(value);
+//     })
+//     .catch(function (error) {
+//         console.log(error);
+//     })
+
+
+
+
+
+
+
+
+
+// Write a function fakeFetch(url) that returns a Promise:
+// If url === "https://good.com" → resolve with "Data from good.com ✅".
+// Otherwise → reject with "404 Not Found ❌".
+
+
+// function fakeFetch(url, url2) {
+//     return new Promise(function(resolve, reject) {
+//         if (url === "https://good.com") {
+//             resolve(`Data from good.com.`);
+//         } else {
+//             reject(`404 Not Found`);
+//         }
+
+//         if (url2 === 'https://another.com') {
+//             resolve('Data from another.com.');
+//         } else {
+//             reject('404 Not Found')
+//         }
+//     });
+// }
+
+// fakeFetch('https://good.com', 'https://another.com')
+//     .then(value => {
+//         console.log(value);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     })
+
+
+
+// function fakeFetch(url) {
+//     return new Promise(function(resolve, reject) {
+//         if (url === "https://good.com") {
+//             resolve(`Data from good.com.`);
+//         } else {
+//             reject(`404 Not Found`);
+//         }
+//     });
+// }
+
+// function fakeFetch2(url) {
+//     return new Promise(function(resolve, reject) {
+//         if (url === 'https://another.com') {
+//             resolve('Data from another.com');
+//         } else {
+//             reject('404 Not Found');
+//         }
+//     });
+// }
+// fakeFetch('https://good.com')
+//     .then(value => {
+//         console.log(value);
+//         return fakeFetch2('https://another.com');
+//     })
+//     .then(value => {
+//         console.log(value);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     })
+
+
+
+
+
