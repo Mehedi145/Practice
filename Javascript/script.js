@@ -560,7 +560,3 @@
 //   return value.toUpperCase();
 // });
 // console.log(maping);
-
-
-
-
