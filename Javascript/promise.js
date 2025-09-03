@@ -304,3 +304,27 @@
 
 
 
+
+
+
+
+
+let hasMeeting = false;
+
+const meeting = new Promise((resolve, reject) => {
+    if (!hasMeeting) {
+        let meetingDetails = {
+            name: 'Technical Meeting',
+            location: `Skype`,
+            time: '10:00 PM',
+        }
+        resolve(meetingDetails);
+    } else {
+        reject(`Meeting is already scheduled`);
+    }
+});
+meeting.then(value => {
+    console.log(value);
+}).catch(error => {
+    console.log(error);
+});
